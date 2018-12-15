@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal">
+
+
+    <ImageButton
+        android:id="@+id/imageCam"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cam2" />
+
+    <ImageButton
+        android:id="@+id/imageEbay"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageCam"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ebay" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linearLayout1"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imageAli"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ali" />
+
+    <ImageButton
+        android:id="@+id/imageAmazon"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageAli"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/amazon" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linearLayout3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linearLayout2"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imageDeal"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/deal" />
+
+    <ImageButton
+        android:id="@+id/imageGear"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageDeal"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gear" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linearLayout4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linearLayout3"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/imageDaraz"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/daraz" />
+
+    <ImageButton
+        android:id="@+id/imageWow"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageDaraz"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wow" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout4"
+
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageLabai"
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/labai" />
+
+        <ImageButton
+            android:id="@+id/imageMydeal"
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/imageLabai"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/mydeal" />
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>
+</android.support.v4.widget.DrawerLayout>
